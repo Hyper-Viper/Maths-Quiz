@@ -1,0 +1,163 @@
+body{
+	background-image: url(Math.png);
+	background-size: 100%;
+}
+*{
+	cursor: url(Gaming\ cursor.cur),auto;
+}
+body:hover #a{
+	animation: animate2 0.5s forwards;
+}
+*:not(:hover) #a{
+	animation: animate3 0.5s forwards;
+}
+body:hover #u{
+	animation: animate2 0.5s forwards;
+}
+*:not(:hover) #u{
+	animation: animate3 0.5s forwards;
+}
+body:hover #m{
+	transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+}
+#translucent{
+	margin-left: -3em;
+	border-radius: 30px;
+	padding: 30px;
+	width: 500px;
+	background-image: linear-gradient(to left, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.9));
+	background-position: 25%;
+	background-size: 500%;
+	height: 300px;
+	transform: rotate(15deg);
+    -ms-transform: rotate(15deg);
+    -webkit-transform: rotate(15deg);
+    display: inline-block;
+    transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+}
+*:not(:hover) #translucent{
+	animation: animater 2s linear;
+	background-position: 25%;
+}
+body:hover #translucent{
+	transform: translate(3em,-3em);
+	-o-transform: translate(3em,-3em);
+	-moz-transform: translate(3em,-3em);
+	-ms-transform: translate(3em,-3em);
+	-webkit-transform: translate(3em,-3em);
+	animation: animate 2s linear;
+	background-position: -50%;
+}
+
+input{
+	height: 20%;
+	width: 50%;
+	font-family: 'Pacifico', cursive;
+	height: 30px;
+	text-align: center;
+	outline: 0px;
+	font-size: 20px;
+	background-size: 100%;
+	color: white;
+	cursor: url(IBeam.cur), auto;
+}
+.btn{
+	cursor: url(Sniper\ Scope\ Link.cur), auto;
+	border-width: 4px;
+	width: 200px;
+	height: 70px;
+	border-radius:35px;
+	font-weight: bold;
+	font-family: 'Permanent Marker', cursive;
+	font-size: 30px;
+	position: relative;
+	color: black;
+	overflow: hidden;
+	outline: 0px;
+	background-size: 500%;
+	background-image: linear-gradient(to right, rgb(255, 208, 0), rgb(211, 22, 22));
+	background-position: 25%;
+}
+h1{
+	color: whitesmoke;
+}
+.btn:hover{
+	animation: animate 1s linear;
+	background-position: -50%;
+}
+.btn:not(:hover){
+	animation: animater 1s linear;
+	background-position: 25%;
+	box-shadow: 4px 4px 9px 4px rgba(67, 65, 79, 0.1);
+}
+
+#p1{
+	margin-top: 10px;
+	border-top-left-radius: 20px;
+	border-top-right-radius: 20px;
+	background-image: linear-gradient(to left, rgb(175, 6, 71), rgb(22, 0, 119));
+}
+
+#p2{
+	border-bottom-left-radius: 20px;
+	border-bottom-right-radius: 20px;
+	background-image: linear-gradient(to left, rgb(109, 0, 119), rgb(6, 37, 175));
+}
+
+#a{
+	font-size: 0px;
+}
+#u{
+	font-size: 0px;
+}
+
+#m{
+	transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(0deg);
+    display: inline-block;
+    transition: all 0.3s;
+    -o-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	margin-right: 1px;
+}
+
+@keyframes animate {
+	0% {
+		background-position: 25%;
+	}
+}
+@keyframes animater {
+	0% {
+		background-position: -50%;
+	}
+}
+h1{
+	font-family: 'Langar', cursive;
+}
+@keyframes animate2 {
+	100% {
+		font-size: 30px;
+	}
+}
+@keyframes animate3 {
+	0% {
+		font-size: 30px;
+	}
+}
+#transparent{
+	height: 920px;
+	width: 100%;;
+	background-color: transparent;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
